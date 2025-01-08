@@ -1,0 +1,42 @@
+
+        body {
+            background-image: url(https://i.gifer.com/J4o.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+       
+        .chat-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        iframe {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 0px 45px rgba(17, 118, 201, 0.774) ;
+            width: 100%;
+            max-width: 600px;
+            height: 95vh;
+           ;
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                height: 80vh;
+            }
+        }
+
+        @media (max-width: 480px) {
+            iframe {
+                height: 75vh;
+            }
+        }
+   
