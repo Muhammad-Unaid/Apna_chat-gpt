@@ -16,20 +16,107 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-      // Show SweetAlert2 welcome alert
-      Swal.fire({
-        title: "Welcome!",
-        text: "Thanks for visiting my website!",
-        icon: "success",
-        confirmButtonText: "Explore",
-        background:
-          "#fff url(https://img.freepik.com/free-vector/ribbon-cutting-ceremony-poster-with-red-curtains-vector-illustration_91128-938.jpg) ",
-        backdrop: `
+        Swal.fire({
+          title: "<h4 >Welcome <br> on Apna Chat GPT</h4> ",
+          
+
+          confirmButtonText: "Explore Now !",
+          text: "Made by Muhammad Unaid",
+          padding: "3em",
+
+          background:
+            "#fff url(https://media.istockphoto.com/id/1475054812/photo/robot-hand-making-contact-with-human-finger-on-dark-blue-background-business-communication.jpg?s=612x612&w=0&k=20&c=XnFBm3qvApmT-jxHXQOh5Gl9ws-6FbV-ZWiXF3i0a2Q=) no-repeat center center",
+          backdrop: `
       rgba(0,0,8,0.4)
-      url("https://media.tenor.com/3vO0Yht3MEUAAAAj/congratulation-hbd.gif")
+      url("https://media1.giphy.com/avatars/acetech/RK67baKq9A79.gif")
       left top
       no-repeat`,
-      });
+          customClass: {
+            title: "swal-title",
+            confirmButton: "swal-button",
+            htmlContainer: "swal-text",
+          },
+        });
+
+//       Swal.fire({
+//         html: `
+//     <h1 class="swal-title">Welcome <br> on Apna Chat GPT</h1>
+//     <button class="swal-button">Explore Now!</button>
+//     <h2 class="swal-footer">Made by Muhammad Unaid</h2>
+//   `,
+//         padding: "3em",
+       
+//         background:
+//           "#fff url(https://media.istockphoto.com/id/1475054812/photo/robot-hand-making-contact-with-human-finger-on-dark-blue-background-business-communication.jpg?s=612x612&w=0&k=20&c=XnFBm3qvApmT-jxHXQOh5Gl9ws-6FbV-ZWiXF3i0a2Q=) no-repeat center center",
+//         backdrop: `
+//     rgba(0,0,8,0.4)
+//     url("https://media1.giphy.com/avatars/acetech/RK67baKq9A79.gif")
+//     left top
+//     no-repeat`,
+//         customClass: {
+//           popup: "swal-popup",
+//           html:"swal-tittle",
+//           confirmButton: "swal-button", // Note: Not used as we're replacing the default button
+//           // confirmButton: true, // Note: Not used as we're replacing the default button
+//         },
+//         // showConfirmButton: false, // Hides default confirm button
+//       });
+
+      // Custom CSS
+      const style = document.createElement("style");
+      style.textContent = `
+  .swal-title {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 2em;
+  }
+  .swal-button {
+    // background-color: blue;
+    // color: white;
+    // padding: 10px 20px;
+    // font-size: 18px;
+    // border: none;
+     width: 9em;
+ height: 3em;
+ border-radius: 30em;
+ font-size: 15px;
+ font-family: inherit;
+ border: none;
+ position: relative;
+ overflow: hidden;
+ z-index: 1;
+ box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+    
+    cursor: pointer;
+    margin-bottom: 1em;
+  }
+    .swal-button::before {
+ content: '';
+ width: 0;
+ height: 3em;
+ border-radius: 30em; 
+ position: absolute;
+ top: 0;
+ left: 0;
+ background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+  .swal-button:hover::before {
+ width: 9em;
+}
+  .swal-footer {
+    font-size: 16px;
+    color: white;
+  }
+  .swal-popup {
+    // max-width: 400px; /* Adjust popup width */
+    text-align: center;
+  }
+`;
+      document.head.appendChild(style);
     </script>
     <div class="chat-container">
       <iframe
