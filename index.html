@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unaid Developer</title>
-    <link rel="stylesheet" href="style.css">
-   
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <!-- <script src="app.js"></script> -->
 
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      // Show SweetAlert2 welcome alert
+      Swal.fire({
+        title: "Welcome!",
+        text: "Thanks for visiting my website!",
+        icon: "success",
+        confirmButtonText: "Explore",
+        background:
+          "#fff url(https://img.freepik.com/free-vector/ribbon-cutting-ceremony-poster-with-red-curtains-vector-illustration_91128-938.jpg) ",
+        backdrop: `
+      rgba(0,0,8,0.4)
+      url("https://media.tenor.com/3vO0Yht3MEUAAAAj/congratulation-hbd.gif")
+      left top
+      no-repeat`,
+      });
+    </script>
     <div class="chat-container">
-        <iframe
-            src="https://widget.kommunicate.io/chat?appId=29a4711bd7048a027da2af6867b619ee5"
-            allow="microphone; geolocation;">
-        </iframe>
-      
-       </script>
+      <iframe
+        src="https://widget.kommunicate.io/chat?appId=29a4711bd7048a027da2af6867b619ee5"
+        allow="microphone; geolocation;"
+      >
+      </iframe>
     </div>
-</body>
+  </body>
 </html>
