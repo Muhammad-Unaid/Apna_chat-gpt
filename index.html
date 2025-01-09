@@ -4,26 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unaid Developer</title>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
-    />
-    <!-- <script src="app.js"></script> -->
-
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
       
-
       Swal.fire({
         html: `
-    <h1 class="swal-title">Welcome <br> on Apna Chat GPT</h1>
-    <button id="customButton" class="swal-button">Explore Now!</button>
-    <h3 class="swal-footer">Made by Muhammad Unaid</h3>
-  `,
+    <h1 class="swal-title">Welcome ! <br> To Apna Chat GPT</h1>
+    <button id="customButton" class="swal-button">Explore Now ! </button>
+   <h3 class="swal-footer"></i> Developed by <strong>Muhammad Unaid</strong> <i class="fas fa-heart"></i></h3> `,
         padding: "3em",
         background:
           "#fff url(https://media.istockphoto.com/id/1475054812/photo/robot-hand-making-contact-with-human-finger-on-dark-blue-background-business-communication.jpg?s=612x612&w=0&k=20&c=XnFBm3qvApmT-jxHXQOh5Gl9ws-6FbV-ZWiXF3i0a2Q=) no-repeat center center",
@@ -48,7 +42,7 @@
   .swal-title {
     font-size: 24px;
     color: white;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
   }
     .swal-button {
     background-color:  #1677e6;
@@ -64,6 +58,7 @@
  border: none;
  position: relative;
  overflow: hidden;
+ 
  z-index: 1;
  box-shadow: 6px 6px 12px #c5c5c5,
              -6px -6px 12px #ffffff;
@@ -97,7 +92,7 @@
   }
 `;
       document.head.appendChild(style);
-    </script>
+    </script> 
     <div class="chat-container">
       <iframe
         src="https://widget.kommunicate.io/chat?appId=29a4711bd7048a027da2af6867b619ee5"
