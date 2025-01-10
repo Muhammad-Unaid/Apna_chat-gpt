@@ -1,68 +1,55 @@
+body {
+  background-image: url(https://i.gifer.com/J4o.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: wrap;
+  text-align: center;
+}
 
-        body {
-            background-image: url(https://i.gifer.com/J4o.gif);
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: #e0e0e0;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: end;
-            flex-wrap: wrap ;
-            text-align: center;
-        }
-        
-       
-        .chat-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 280vh;
-            height: 100vh;
-            padding: 20px;
-            box-sizing: border-box;
-            
-        }
+.chat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280vh;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-        iframe {
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0px 0px 45px rgba(17, 118, 201, 0.774) ;
-            width: 100%;
-            max-width: 900px;
-            height: 95vh;
-           
-        }
-        /* #end-footer{
+iframe {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 45px rgba(17, 118, 201, 0.774);
+  width: 100%;
+  max-width: 900px;
+  height: 95vh;
+}
+/* #end-footer{
             display: flex;
             justify-content: end;
             align-items: end;
         } */
 
-        @media (max-width: 768px) {
-            iframe {
-                height: auto;
-                margin: 0 ;
-                
-            }
-        }
+@media (max-width: 768px) {
+  iframe {
+    height: 85vh;
+  }
+}
 
-        @media (max-width: 480px) {
-            iframe {
-                height: auto;
-                margin: 0 ;
-            }
-        }
-       
-        iframe {
-            display: block;
-            margin: 5px ; /* Add margin to create space */
-          }
-    
-          
-   a{
-    text-decoration: none;
-    color: #42cfc6;
-   }
+@media (max-width: 480px) {
+  iframe {
+    height: 80vh;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #42cfc6;
+}
