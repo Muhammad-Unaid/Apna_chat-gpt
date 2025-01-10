@@ -37,7 +37,7 @@ iframe {
             align-items: end;
         } */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   iframe {
     height: 85vh;
   }
@@ -47,7 +47,7 @@ iframe {
   iframe {
     height: 80vh;
   }
-}
+} */
 
 a {
   text-decoration: none;
