@@ -43,7 +43,7 @@
 
         @media (max-width: 768px) {
             iframe {
-                height: 90vh;
+                height: auto;
                 margin: 0 ;
                 
             }
@@ -51,7 +51,7 @@
 
         @media (max-width: 480px) {
             iframe {
-                height: 85vh;
+                height: auto;
                 margin: 0 ;
             }
         }
