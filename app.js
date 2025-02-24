@@ -1,4 +1,4 @@
-// sweat alert
+// sweat alert pope use for welcome
 Swal.fire({
   html: `
 <h1 class="swal-title">Welcome ! <br> To Apna Chat GPT</h1>
