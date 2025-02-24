@@ -1,29 +1,28 @@
+// sweat alert
 Swal.fire({
-    html: `
+  html: `
 <h1 class="swal-title">Welcome ! <br> To Apna Chat GPT</h1>
 <button id="customButton" class="swal-button">Explore Now ! </button>
 <h3 class="swal-footer"></i> Developed by <strong>Muhammad Unaid</strong> <i class="fas fa-heart"></i></h3> `,
-    padding: "3em",
-    background:
-      "#fff url(https://media.istockphoto.com/id/1475054812/photo/robot-hand-making-contact-with-human-finger-on-dark-blue-background-business-communication.jpg?s=612x612&w=0&k=20&c=XnFBm3qvApmT-jxHXQOh5Gl9ws-6FbV-ZWiXF3i0a2Q=) no-repeat center center",
-    backdrop: `
+  padding: "3em",
+  background:
+    "#fff url(https://media.istockphoto.com/id/1475054812/photo/robot-hand-making-contact-with-human-finger-on-dark-blue-background-business-communication.jpg?s=612x612&w=0&k=20&c=XnFBm3qvApmT-jxHXQOh5Gl9ws-6FbV-ZWiXF3i0a2Q=) no-repeat center center",
+  backdrop: `
 rgba(0,0,8,0.4)
 url("https://media1.giphy.com/avatars/acetech/RK67baKq9A79.gif")
 left top
 no-repeat`,
-    showConfirmButton: false, // Hides default confirm button
-  });
+  showConfirmButton: false, // Hides default confirm button
+});
 
-  // Add event listener for the custom button
-  document
-    .getElementById("customButton")
-    .addEventListener("click", function () {
-      Swal.close(); // Close the alert when the button is clicked
-    });
+// Add event listener for the custom button
+document.getElementById("customButton").addEventListener("click", function () {
+  Swal.close(); // Close the alert when the button is clicked
+});
 
-  // Custom CSS
-  const style = document.createElement("style");
-  style.textContent = `
+// Custom CSS
+const style = document.createElement("style");
+style.textContent = `
 .swal-title {
 font-size: 24px;
 color: white;
@@ -76,4 +75,4 @@ max-width: 400px; /* Adjust popup width */
 text-align: center;
 }
 `;
-  document.head.appendChild(style);
+document.head.appendChild(style);
